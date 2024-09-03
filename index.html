@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reconocimiento Facial</title>
+
+    <script src="face-api.min.js" defer></script>
+    <!-- Incluye Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="script.js" defer></script>
+    <!-- Incluye tu archivo de estilo personalizado -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Modifica la clase de fondo del encabezado -->
+    <header class="bg-d7ffe4 text-black text-center py-4">
+        <h1 class="h1">Control de Acceso</h1>
+        <div class="logo-container">
+            <img src="fotos/umg.jpg" alt="Logo UMG" class="umg-logo">
+        </div>
+    </header>
+
+
+
+
+    <main class="container my-4">
+        <div class="row">
+            <div class="col-md-6">
+
+                <center>
+
+                    <div class="result-container text-center">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="h3">Datos</h3>
+                                <p class="h5 mb-4" id="label"></p>
+                                <p class="h6" id="label2"></p>
+                                <p class="h6" id="label3"></p>
+                            </div>
+                            <img id="photo" src="" alt="Foto de la persona reconocida"
+                                class="small-photo card-img-bottom" style="display: none;">
+                        </div>
+                    </div>
+                    
+
+                    <!-- Contenedor de video -->
+                    <div class="video-container">
+                        <video id="video" autoplay muted width="220" height="140"></video>
+                    </div>
+                </center>
+
+
+
+            </div>
+
+            <div class="col-md-6">
+                <!-- Contenedor de resultados -->
+
+
+                <!-- Lista de personas registradas en una tabla -->
+                <div class="registered-people">
+                    <center>
+                        <h2 class="h2">Registro de quienes han ingresado</h2>
+                    </center>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Edad</th>
+                                <th>Género</th>
+                            </tr>
+                        </thead>
+                        <tbody id="registered-list"></tbody>
+                    </table>
+
+                </div>
+                <!-- <button id="downloadButton" class="btn btn-danger">Descargar Asistencia</button> -->
+                <button id="downloadButton"> Descargar</button>
+                <div id="countdown" class="countdown"></div>
+                
+
+
+
+
+
+            </div>
+        </div>
+    </main>
+    <!-- Incluye Bootstrap JS y jQuery (Requeridos para ciertas funcionalidades de Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+</body>
+
+</html>

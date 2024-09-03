@@ -1,0 +1,235 @@
+/* Estilo para el fondo */
+body {
+    background-color: #808B96; /* Cambia el color de fondo según tu preferencia */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    font-family: Arial, sans-serif; /* Cambia la fuente predeterminada */
+}
+
+/* Estilo para el encabezado */
+/* Estilo para el encabezado */
+header {
+    background-color: #17202A;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px; /* Aumenta el espacio de relleno para letras más grandes */
+    text-align: center;
+    font-size: 50px; /* Aumenta el tamaño de fuente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Estilo para el contenedor principal */
+.content-container {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    align-items: center;
+    justify-content: center; /* Centra verticalmente */
+    margin: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para el contenedor de video */
+.video-container {
+    flex: 1; /* Utiliza flexbox para ajustar el tamaño del contenedor de video */
+    margin-right: 2px; /* Agrega un margen derecho de 20px al contenedor de video */
+}
+
+/* Estilo para el elemento de video */
+video {
+    max-width: 100%; /* Establece el ancho máximo del video al 100% del contenedor */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+    border: 1px solid #ccc; /* Agrega un borde sólido de 1px con color gris claro al video */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Agrega una sombra alrededor del video */
+}
+
+
+/* Estilo para la etiqueta de resultado y la foto */
+.result-container {
+    text-align: center;
+    background-color: #808B96;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    align-items: center;
+}
+
+/* Estilo para la etiqueta de resultado */
+.label-container {
+    background-color: #17202A;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.label-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilo para la foto */
+.photo-container {
+    margin-top: 20px;
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.small-photo {
+    max-width: 150px;
+    height: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 1%;
+}
+
+
+
+
+
+/* Estilo para la tarjeta */
+.card {
+    background-color: #17202A;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    display: flex; /* Usa flexbox */
+    flex-direction: column; /* Cambia la dirección del flex a columna */
+    align-items: center; /* Centra horizontalmente */
+}
+
+/* Estilo para el título de la tarjeta */
+.card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la foto dentro de la tarjeta */
+.card-img-bottom {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    border-radius: 1%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin: auto; /* Centra verticalmente */
+}
+
+
+
+
+
+
+/* Estilo para la tabla */
+table {
+    margin-top: 20px; /* Agrega un margen superior de 20px a la tabla */
+    width: 100%; /* Establece el ancho de la tabla al 100% del contenedor */
+    background-color: #808B96; /* Establece el color de fondo de la tabla */
+    border-collapse: collapse; /* Combina los bordes de las celdas adyacentes */
+    border-radius: 10px; /* Agrega un borde redondeado de 10px a la tabla */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra a la tabla */
+    border: 4px solid #000000; /* Establece un borde sólido de 4px con color rosado */
+}
+
+th, td {
+    padding: 14px; /* Agrega un espacio interior de 14px en celdas th y td */
+    text-align: center; /* Centra el contenido de las celdas horizontalmente */
+    border: 4px solid #000000; /* Establece un borde sólido de 4px con color rosado en todas las celdas */
+}
+
+th {
+    background-color: #17202A; /* Establece un color de fondo para las celdas de encabezado */
+    color: #ffffff; /* Establece el color del texto en las celdas de encabezado */
+}
+
+/* Estilo para las filas impares */
+tr:nth-child(odd) {
+    background-color: #808B96; /* Establece un color de fondo alternativo para filas impares */
+}
+
+/* Hover sobre las filas */
+tr:hover {
+    background-color: #ffffff; /* Cambia el color de fondo al pasar el mouse sobre las filas */
+}
+
+
+
+
+
+/* Estilo para el logotipo de UMG */
+.umg-logo {
+    max-width: 100px; /* Establece el ancho máximo del logotipo */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+    margin-right: 10px; /* Agrega un margen derecho para separar el logotipo del título */
+}
+
+/* Estilo para el contenedor del logotipo */
+.logo-container {
+    display: inline-block; /* Hace que el contenedor del logotipo sea en línea */
+    vertical-align: middle; /* Alinea verticalmente el logotipo al centro */
+}
+
+/* Estilo para el contenedor del título */
+.title-container {
+    display: inline-block; /* Hace que el contenedor del título sea en línea */
+    vertical-align: middle; /* Alinea verticalmente el título al centro */
+}
+
+
+
+/* Estilo para el título principal (h1) */
+.h1 {
+    font-size: 36px; /* Tamaño de fuente */
+    font-weight: bolder; /* Grosor del texto (más grueso) */
+    color: #ffffff; /* Color del texto (azul en este caso) */
+    
+}
+
+
+
+/* Estilo para el título principal (h1) */
+.h2 {
+    font-size: 30px; /* Tamaño de fuente */
+    font-weight: bolder; /* Grosor del texto (más grueso) */
+    
+}
+.h3 {
+    font-size: 20px; /* Tamaño de fuente */
+    font-weight: bolder; /* Grosor del texto (más grueso) */
+    color: #ffffff;
+}
+.h5 {
+    font-size: 20px; /* Tamaño de fuente */
+    color: #ffffff;
+}
+.h6 {
+    font-size: 20px; /* Tamaño de fuente */
+    color: #ffffff;
+}
+
+
+
+/* Definición de estilos para un botón de descarga */
+button {
+    font-family: monospace;
+    background-color: #F08080;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    height: 45px;
+    transition: .3s;
+  }
+  
+  button:hover {
+    background-color: #6495ED;
+    box-shadow: 0 0 0 5px #3b83f65f;
+    color: #fff;
+  }
+  
